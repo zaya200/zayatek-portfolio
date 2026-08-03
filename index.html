@@ -1,1 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zayatek - Digital Innovative Solution</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#060633;
+    color:white;
+}
+
+/* Header */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h2{
+    color:#00d9ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d9ff;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero-content img{
+    width:150px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#00d9ff;
+}
+
+.hero h3{
+    font-size:28px;
+    margin:10px 0;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#00d9ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* Sections */
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    color:#00d9ff;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* Cards */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#11114d;
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#00d9ff;
+    margin-bottom:15px;
+}
+
+/* Skills */
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    background:#222;
+    height:10px;
+    border-radius:10px;
+}
+
+.fill{
+    background:#00d9ff;
+    height:10px;
+    border-radius:10px;
+}
+
+/* Contact */
+.contact-box{
+    text-align:center;
+    background:#11114d;
+    padding:40px;
+    border-radius:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Zayatek Logo">
+        <h2>Zayatek</h2>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <img src="logo.png" alt="Logo">
+
+        <h1>Zayatek</h1>
+        <h3>Digital Innovative Solution</h3>
+
+        <p>
+            Professional Website Development, Graphic Design,
+            Printing Services, Branding and Digital Solutions.
+        </p>
+
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="card">
+        <p>
+            My name is <b>Isaiah Olaoluwa Onatayo</b>. I am a motivated website developer,
+            graphic designer and digital creator with a passion for building modern websites
+            and providing quality digital services. I founded <b>Zayatek</b> to help businesses
+            grow through technology and creative solutions.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="title">Our Services</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Modern and responsive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>Professional coding solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Design</h3>
+            <p>Flyers, logos, banners and branding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Printing Services</h3>
+            <p>Business cards, banners and prints.</p>
+        </div>
+
+        <div class="card">
+            <h3>Logo Design</h3>
+            <p>Creative logo creation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Branding</h3>
+            <p>Building strong business identities.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Graphic Design</p>
+        <div class="bar"><div class="fill" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Printing</p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">Contact Us</h2>
+
+    <div class="contact-box">
+        <p>📞 0803 988 5800</p>
+        <p>📞 0812 871 6222</p>
+        <p>📧 isaiaholaoluwa443@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Zayatek - Digital Innovative Solution</p>
+</footer>
+
+</body>
+</html>
